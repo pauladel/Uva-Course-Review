@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.gui.LoginController">
+   <children>
+      <Label fx:id="welcome" alignment="TOP_CENTER" prefHeight="42.0" prefWidth="219.0" text="Welcome to Course Review">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="login" alignment="CENTER" text="Login:">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Label>
+      <Button fx:id="existing" mnemonicParsing="false" onAction="#SwitchtoExisting" text="Existing User" />
+      <Button fx:id="newuser" mnemonicParsing="false" onAction="#SwitchtoNew" text="New User">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>

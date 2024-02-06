@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.gui.SeeReviewController">
+   <children>
+      <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back">
+         <VBox.margin>
+            <Insets bottom="15.0" left="5.0" top="5.0" />
+         </VBox.margin></Button>
+      <Label fx:id="enter" text="Enter course name:" />
+      <TextField fx:id="coursename" onAction="#courseSearch" />
+      <HBox prefHeight="40.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="average" text="Average Score:">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Label>
+            <Label fx:id="score" text="0.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin></Label>
+         </children>
+      </HBox>
+      <Label text="Reviews:">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin></Label>
+      <ScrollPane fx:id="reviewPane" prefHeight="196.0" prefWidth="400.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="377.0" prefWidth="398.0">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</VBox>
